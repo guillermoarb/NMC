@@ -1,0 +1,16 @@
+--chip=18F26K22
+--opt=default,+asm,+asmfile,-speed,+space,-debug
+-GPlatease
+--double=24
+--float=24
+--emi=wordwrite
+--runtime=default,plib
+--addrqual=ignore
+--addrqual=ignore
+--mode=free
+-P -N255 --warn=0 --asmlist
+--summary=default,-psect,-class,+mem,-hex,-file
+--output=default,-inhx032
+--outdir=Files
+--time
+main.c
