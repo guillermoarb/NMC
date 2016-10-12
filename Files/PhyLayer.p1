@@ -1,46 +1,17 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
-"23 main.c
-[v _SetupInit `(v ~T0 @X0 0 ef ]
-[v F8442 `(v ~T0 @X0 1 tf1`ul ]
-"152 /Applications/microchip/xc8/v1.35/include/pic18.h
-[v __delay `JF8442 ~T0 @X0 0 e ]
-[p i __delay ]
-"6564 /Applications/microchip/xc8/v1.35/include/pic18f26k22.h
-[s S412 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S412 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"6574
-[s S413 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S413 . INT0 INT1 INT2 CCP2 KBI0 KBI1 KBI2 KBI3 ]
-"6584
-[s S414 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S414 . AN12 AN10 AN8 AN9 AN11 AN13 TX2 RX2 ]
-"6594
-[s S415 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S415 . FLT0 C12IN3M P1B C12IN2M T5G T1G CK2 DT2 ]
-"6604
-[s S416 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S416 . SRI C12IN3N CTED1 C12IN2N P1D CCP3 PGC PGD ]
-"6614
-[s S417 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S417 . CCP4 P1C SDA2 CTED2 . T3CKI ]
-"6622
-[s S418 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S418 . SS2 SCL2 SDI2 P2A . P3A ]
-"6630
-[s S419 :1 `uc 1 ]
-[n S419 . NOT_SS2 ]
-"6633
-[s S420 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S420 . nSS2 SCK2 . SDO2 . P2B ]
-"6641
-[s S421 :3 `uc 1 :1 `uc 1 ]
-[n S421 . . CCP2_PA2 ]
-"6563
-[u S411 `S412 1 `S413 1 `S414 1 `S415 1 `S416 1 `S417 1 `S418 1 `S419 1 `S420 1 `S421 1 ]
-[n S411 . . . . . . . . . . . ]
-"6646
-[v _PORTBbits `VS411 ~T0 @X0 0 e@3969 ]
+"8160 /Applications/microchip/xc8/v1.35/include/pic18f26k22.h
+[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S500 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
+"8170
+[s S501 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S501 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"8159
+[u S499 `S500 1 `S501 1 ]
+[n S499 . . . ]
+"8181
+[v _TRISBbits `VS499 ~T0 @X0 0 e@3987 ]
+"4540
+[v _RCSTA2 `Vuc ~T0 @X0 0 e@3953 ]
 "4842
 [s S292 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S292 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
@@ -58,80 +29,69 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S291 . . . . . ]
 "4870
 [v _TXSTA2bits `VS291 ~T0 @X0 0 e@3954 ]
-"334 /Applications/microchip/xc8/v1.35/include/plib/usart.h
-[v _Write2USART `(v ~T0 @X0 0 ef1`uc ]
-"3 PhyLayer.h
-[v _FlagPaqRx2 `uc ~T0 @X0 0 e ]
-"7
-[v _PaqXBAPILen `uc ~T0 @X0 0 e ]
-"24 main.c
-[v _SetupClock `(v ~T0 @X0 0 ef ]
-"27
-[v _SetupPorts `(v ~T0 @X0 0 ef ]
-"10 PhyLayer.h
-[v _Setup_USART2 `(v ~T0 @X0 0 ef ]
-"18534 /Applications/microchip/xc8/v1.35/include/pic18f26k22.h
-[v _PEIE `Vb ~T0 @X0 0 e@32662 ]
-"16848
-[s S1078 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1078 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"16858
-[s S1079 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1079 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"16868
-[s S1080 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1080 . . GIEL GIEH ]
-"16873
-[s S1081 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1081 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"16883
-[s S1082 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1082 . . GIEL GIEH ]
-"16847
-[u S1077 `S1078 1 `S1079 1 `S1080 1 `S1081 1 `S1082 1 ]
-[n S1077 . . . . . . ]
-"16889
-[v _INTCONbits `VS1077 ~T0 @X0 0 e@4082 ]
-"15994
-[s S1015 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S1015 . SCS HFIOFS OSTS IRCF IDLEN ]
-"16001
-[s S1016 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1016 . SCS0 SCS1 IOFS . IRCF0 IRCF1 IRCF2 ]
-"15993
-[u S1014 `S1015 1 `S1016 1 ]
-[n S1014 . . . ]
-"16011
-[v _OSCCONbits `VS1014 ~T0 @X0 0 e@4051 ]
-"49
-[v _ANSELA `Vuc ~T0 @X0 0 e@3896 ]
-"93
-[v _ANSELB `Vuc ~T0 @X0 0 e@3897 ]
-"142
-[v _ANSELC `Vuc ~T0 @X0 0 e@3898 ]
-"8160
-[s S500 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S500 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
-"8170
-[s S501 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S501 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"8159
-[u S499 `S500 1 `S501 1 ]
-[n S499 . . . ]
-"8181
-[v _TRISBbits `VS499 ~T0 @X0 0 e@3987 ]
-"99
-[s S4 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S4 . ANSB0 ANSB1 ANSB2 ANSB3 ANSB4 ANSB5 ]
-"98
-[u S3 `S4 1 ]
-[n S3 . . ]
-"108
-[v _ANSELBbits `VS3 ~T0 @X0 0 e@3897 ]
-"19350
-[v _TX2IF `Vb ~T0 @X0 0 e@32036 ]
-"5086
-[v _TXREG2 `Vuc ~T0 @X0 0 e@3955 ]
+"9442
+[v _PIE3 `Vuc ~T0 @X0 0 e@4003 ]
+"318 /Applications/microchip/xc8/v1.35/include/plib/usart.h
+[v _Open2USART `(v ~T0 @X0 0 ef2`uc`ui ]
+"9650 /Applications/microchip/xc8/v1.35/include/pic18f26k22.h
+[s S561 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S561 . TMR1GIP TMR3GIP TMR5GIP CTMUIP TX2IP RC2IP BCL2IP SSP2IP ]
+"9660
+[s S562 :1 `uc 1 :1 `uc 1 ]
+[n S562 . . RXBNIP ]
+"9664
+[s S563 :4 `uc 1 :1 `uc 1 ]
+[n S563 . . TXBNIP ]
+"9649
+[u S560 `S561 1 `S562 1 `S563 1 ]
+[n S560 . . . . ]
+"9669
+[v _IPR3bits `VS560 ~T0 @X0 0 e@4005 ]
+"9448
+[s S548 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S548 . TMR1GIE TMR3GIE TMR5GIE CTMUIE TX2IE RC2IE BCL2IE SSP2IE ]
+"9458
+[s S549 :1 `uc 1 ]
+[n S549 . RXB0IE ]
+"9461
+[s S550 :1 `uc 1 :1 `uc 1 ]
+[n S550 . . RXB1IE ]
+"9465
+[s S551 :1 `uc 1 :1 `uc 1 ]
+[n S551 . . RXBNIE ]
+"9469
+[s S552 :2 `uc 1 :1 `uc 1 ]
+[n S552 . . TXB0IE ]
+"9473
+[s S553 :3 `uc 1 :1 `uc 1 ]
+[n S553 . . TXB1IE ]
+"9477
+[s S554 :4 `uc 1 :1 `uc 1 ]
+[n S554 . . TXB2IE ]
+"9481
+[s S555 :4 `uc 1 :1 `uc 1 ]
+[n S555 . . TXBNIE ]
+"9447
+[u S547 `S548 1 `S549 1 `S550 1 `S551 1 `S552 1 `S553 1 `S554 1 `S555 1 ]
+[n S547 . . . . . . . . . ]
+"9486
+[v _PIE3bits `VS547 ~T0 @X0 0 e@4003 ]
+"9571
+[s S557 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S557 . TMR1GIF TMR3GIF TMR5GIF CTMUIF TX2IF RC2IF BCL2IF SSP2IF ]
+"9581
+[s S558 :1 `uc 1 :1 `uc 1 ]
+[n S558 . . RXBNIF ]
+"9585
+[s S559 :4 `uc 1 :1 `uc 1 ]
+[n S559 . . TXBNIF ]
+"9570
+[u S556 `S557 1 `S558 1 `S559 1 ]
+[n S556 . . . . ]
+"9590
+[v _PIR3bits `VS556 ~T0 @X0 0 e@4004 ]
+"333 /Applications/microchip/xc8/v1.35/include/plib/usart.h
+[v _Read2USART `(uc ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -7273,650 +7233,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18f26k22.h: 19486: extern volatile __bit nTO @ (((unsigned) &RCON)*8) + 3;
 [; ;pic18f26k22.h: 19488: extern volatile __bit nW2 @ (((unsigned) &SSP2STAT)*8) + 2;
 [; ;pic18f26k22.h: 19490: extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
-[; ;adc.h: 2008: union ADCResult
-[; ;adc.h: 2009: {
-[; ;adc.h: 2010: int lr;
-[; ;adc.h: 2011: char br[2];
-[; ;adc.h: 2012: };
-[; ;adc.h: 2014: char BusyADC (void);
-[; ;adc.h: 2016: void ConvertADC (void);
-[; ;adc.h: 2018: void CloseADC(void);
-[; ;adc.h: 2026: int ReadADC(void);
-[; ;adc.h: 2040: void OpenADC ( unsigned char ,
-[; ;adc.h: 2041: unsigned char ,
-[; ;adc.h: 2042: unsigned char );
-[; ;adc.h: 2084: void SetChanADC(unsigned char );
-[; ;adc.h: 2100: void SelChanConvADC( unsigned char );
-[; ;ancomp.h: 90: void Close_ancomp1( void );
-[; ;ancomp.h: 91: void Open_ancomp1(unsigned char config);
-[; ;ancomp.h: 92: void Close_ancomp2( void );
-[; ;ancomp.h: 93: void Open_ancomp2(unsigned char config);
-[; ;spi.h: 236: void OpenSPI1( unsigned char sync_mode,
-[; ;spi.h: 237: unsigned char bus_mode,
-[; ;spi.h: 238: unsigned char smp_phase );
-[; ;spi.h: 240: signed char WriteSPI1( unsigned char data_out );
-[; ;spi.h: 242: void getsSPI1( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 244: void putsSPI1( unsigned char *wrptr );
-[; ;spi.h: 246: unsigned char ReadSPI1( void );
-[; ;spi.h: 441: void OpenSPI2( unsigned char sync_mode,
-[; ;spi.h: 442: unsigned char bus_mode,
-[; ;spi.h: 443: unsigned char smp_phase );
-[; ;spi.h: 445: signed char WriteSPI2( unsigned char data_out );
-[; ;spi.h: 447: void getsSPI2( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 449: void putsSPI2( unsigned char *wrptr );
-[; ;spi.h: 451: unsigned char ReadSPI2( void );
-[; ;can2510.h: 414: void CAN2510Initialize(  unsigned int configuration,
-[; ;can2510.h: 415: unsigned char brp,
-[; ;can2510.h: 416: unsigned char interruptFlags,
-[; ;can2510.h: 417: unsigned char SPI_syncMode,
-[; ;can2510.h: 418: unsigned char SPI_busMode,
-[; ;can2510.h: 419: unsigned char SPI_smpPhase );
-[; ;can2510.h: 421: signed char CAN2510Init(  unsigned long BufferConfig,
-[; ;can2510.h: 422: unsigned long BitTimeConfig,
-[; ;can2510.h: 423: unsigned char interruptEnables,
-[; ;can2510.h: 424: unsigned char SPI_syncMode,
-[; ;can2510.h: 425: unsigned char SPI_busMode,
-[; ;can2510.h: 426: unsigned char SPI_smpPhase );
-[; ;can2510.h: 428: void CAN2510Enable( void );
-[; ;can2510.h: 430: void CAN2510Disable( void );
-[; ;can2510.h: 432: void CAN2510Reset( void );
-[; ;can2510.h: 434: void CAN2510SetMode(  unsigned char mode );
-[; ;can2510.h: 436: unsigned char CAN2510ReadMode( void );
-[; ;can2510.h: 438: unsigned char CAN2510ReadStatus( void );
-[; ;can2510.h: 440: unsigned char CAN2510ErrorState( void );
-[; ;can2510.h: 442: unsigned char CAN2510InterruptStatus( void );
-[; ;can2510.h: 444: void CAN2510InterruptEnable( unsigned char interruptFlags );
-[; ;can2510.h: 446: unsigned char CAN2510ByteRead(  unsigned char addr );
-[; ;can2510.h: 448: void CAN2510ByteWrite(  unsigned char addr,  unsigned char value );
-[; ;can2510.h: 450: void CAN2510SequentialRead(  unsigned char *DataArray,
-[; ;can2510.h: 451: unsigned char CAN2510addr,
-[; ;can2510.h: 452: unsigned char numbytes );
-[; ;can2510.h: 454: void CAN2510SequentialWrite(  unsigned char *DataArray,
-[; ;can2510.h: 455: unsigned char CAN2510addr,
-[; ;can2510.h: 456: unsigned char numbytes );
-[; ;can2510.h: 458: void CAN2510BitModify(  unsigned char address,
-[; ;can2510.h: 459: unsigned char mask,
-[; ;can2510.h: 460: unsigned char data );
-[; ;can2510.h: 462: void CAN2510SetSingleMaskStd(  unsigned char maskNum,  unsigned int mask );
-[; ;can2510.h: 464: void CAN2510SetSingleMaskXtd(  unsigned char maskNum,  unsigned long mask );
-[; ;can2510.h: 466: void CAN2510SetSingleFilterStd(  unsigned char filterNum,  unsigned int filter );
-[; ;can2510.h: 468: void CAN2510SetSingleFilterXtd(  unsigned char filterNum,  unsigned long filter );
-[; ;can2510.h: 470: signed char CAN2510SetMsgFilterStd(  unsigned char bufferNum,
-[; ;can2510.h: 471: unsigned int mask,
-[; ;can2510.h: 472: unsigned int *filters );
-[; ;can2510.h: 474: signed char CAN2510SetMsgFilterXtd(  unsigned char bufferNum,
-[; ;can2510.h: 475: unsigned long mask,
-[; ;can2510.h: 476: unsigned long *filters );
-[; ;can2510.h: 478: signed char CAN2510WriteStd(  unsigned int msgId,
-[; ;can2510.h: 479: unsigned char msgPriority,
-[; ;can2510.h: 480: unsigned char numBytes,
-[; ;can2510.h: 481: unsigned char *data );
-[; ;can2510.h: 483: signed char CAN2510WriteXtd(  unsigned long msgId,
-[; ;can2510.h: 484: unsigned char msgPriority,
-[; ;can2510.h: 485: unsigned char numBytes,
-[; ;can2510.h: 486: unsigned char *data );
-[; ;can2510.h: 488: void CAN2510LoadBufferStd(  unsigned char bufferNum,
-[; ;can2510.h: 489: unsigned int msgId,
-[; ;can2510.h: 490: unsigned char numBytes,
-[; ;can2510.h: 491: unsigned char *data );
-[; ;can2510.h: 493: void CAN2510LoadBufferXtd(  unsigned char bufferNum,
-[; ;can2510.h: 494: unsigned long msgId,
-[; ;can2510.h: 495: unsigned char numBytes,
-[; ;can2510.h: 496: unsigned char *data );
-[; ;can2510.h: 498: void CAN2510LoadRTRStd(  unsigned char bufferNum,
-[; ;can2510.h: 499: unsigned int msgId,
-[; ;can2510.h: 500: unsigned char numBytes );
-[; ;can2510.h: 502: void CAN2510LoadRTRXtd(  unsigned char bufferNum,
-[; ;can2510.h: 503: unsigned long msgId,
-[; ;can2510.h: 504: unsigned char numBytes );
-[; ;can2510.h: 506: void CAN2510SetBufferPriority(  unsigned char bufferNum,
-[; ;can2510.h: 507: unsigned char bufferPriority );
-[; ;can2510.h: 509: void CAN2510SendBuffer(  unsigned char bufferNumber );
-[; ;can2510.h: 511: signed char CAN2510WriteBuffer(  unsigned char bufferNum );
-[; ;can2510.h: 513: unsigned char CAN2510DataReady(  unsigned char bufferNum );
-[; ;can2510.h: 515: unsigned char CAN2510DataRead(  unsigned char bufferNum,
-[; ;can2510.h: 516: unsigned long *msgId,
-[; ;can2510.h: 517: unsigned char *numBytes,
-[; ;can2510.h: 518: unsigned char *data );
-[; ;capture.h: 64: union capstatus
-[; ;capture.h: 65: {
-[; ;capture.h: 73: struct
-[; ;capture.h: 74: {
-[; ;capture.h: 91: unsigned Cap4OVF:1;
-[; ;capture.h: 92: unsigned Cap5OVF:1;
-[; ;capture.h: 107: unsigned ECap1OVF:1;
-[; ;capture.h: 111: unsigned ECap2OVF:1;
-[; ;capture.h: 112: unsigned ECap3OVF:1;
-[; ;capture.h: 115: };
-[; ;capture.h: 117: unsigned :8;
-[; ;capture.h: 119: };
-[; ;capture.h: 121: extern union capstatus CapStatus;
-[; ;capture.h: 123: union CapResult
-[; ;capture.h: 124: {
-[; ;capture.h: 125: unsigned int lc;
-[; ;capture.h: 126: char bc[2];
-[; ;capture.h: 127: };
-[; ;capture.h: 507: void OpenCapture4 ( unsigned char config);
-[; ;capture.h: 508: unsigned int ReadCapture4 (void);
-[; ;capture.h: 509: void CloseCapture4 (void);
-[; ;capture.h: 511: void OpenCapture5 ( unsigned char config);
-[; ;capture.h: 512: unsigned int ReadCapture5 (void);
-[; ;capture.h: 513: void CloseCapture5 (void);
-[; ;capture.h: 568: void OpenECapture1 ( unsigned char config);
-[; ;capture.h: 569: unsigned int ReadECapture1 (void);
-[; ;capture.h: 570: void CloseECapture1 (void);
-[; ;capture.h: 573: void OpenECapture2 ( unsigned char config);
-[; ;capture.h: 574: unsigned int ReadECapture2 (void);
-[; ;capture.h: 575: void CloseECapture2 (void);
-[; ;capture.h: 577: void OpenECapture3 ( unsigned char config);
-[; ;capture.h: 578: unsigned int ReadECapture3 (void);
-[; ;capture.h: 579: void CloseECapture3 (void);
-[; ;compare.h: 403: void OpenCompare4(unsigned char config,unsigned int period);
-[; ;compare.h: 404: void CloseCompare4(void);
-[; ;compare.h: 406: void OpenCompare5(unsigned char config,unsigned int period);
-[; ;compare.h: 407: void CloseCompare5(void);
-[; ;compare.h: 433: void OpenECompare1(unsigned char config,unsigned int period);
-[; ;compare.h: 434: void CloseECompare1(void);
-[; ;compare.h: 439: void OpenECompare2(unsigned char config,unsigned int period);
-[; ;compare.h: 440: void CloseECompare2(void);
-[; ;compare.h: 442: void OpenECompare3(unsigned char config,unsigned int period);
-[; ;compare.h: 443: void CloseECompare3(void);
-[; ;ctmu.h: 374: void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
-[; ;ctmu.h: 379: void CurrentControlCTMU(unsigned char config);
-[; ;ctmu.h: 380: void CloseCTMU(void);
-[; ;EEP.h: 36: void Busy_eep ( void );
-[; ;EEP.h: 37: unsigned char Read_b_eep( unsigned int badd );
-[; ;EEP.h: 38: void Write_b_eep( unsigned int badd, unsigned char bdat );
-[; ;__size_t.h: 4: typedef unsigned size_t;
-[; ;stddef.h: 6: typedef int ptrdiff_t;
-[; ;GenericTypeDefs.h: 65: typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
-[; ;GenericTypeDefs.h: 68: typedef enum _BIT { CLEAR = 0, SET } BIT;
-[; ;GenericTypeDefs.h: 75: typedef signed int INT;
-[; ;GenericTypeDefs.h: 76: typedef signed char INT8;
-[; ;GenericTypeDefs.h: 77: typedef signed short int INT16;
-[; ;GenericTypeDefs.h: 78: typedef signed long int INT32;
-[; ;GenericTypeDefs.h: 86: typedef unsigned int UINT;
-[; ;GenericTypeDefs.h: 87: typedef unsigned char UINT8;
-[; ;GenericTypeDefs.h: 88: typedef unsigned short int UINT16;
-[; ;GenericTypeDefs.h: 89: typedef unsigned long int UINT32;
-[; ;GenericTypeDefs.h: 95: typedef unsigned short long UINT24;
-[; ;GenericTypeDefs.h: 103: typedef union
-[; ;GenericTypeDefs.h: 104: {
-[; ;GenericTypeDefs.h: 105: UINT8 Val;
-[; ;GenericTypeDefs.h: 106: struct
-[; ;GenericTypeDefs.h: 107: {
-[; ;GenericTypeDefs.h: 108: UINT8 b0:1;
-[; ;GenericTypeDefs.h: 109: UINT8 b1:1;
-[; ;GenericTypeDefs.h: 110: UINT8 b2:1;
-[; ;GenericTypeDefs.h: 111: UINT8 b3:1;
-[; ;GenericTypeDefs.h: 112: UINT8 b4:1;
-[; ;GenericTypeDefs.h: 113: UINT8 b5:1;
-[; ;GenericTypeDefs.h: 114: UINT8 b6:1;
-[; ;GenericTypeDefs.h: 115: UINT8 b7:1;
-[; ;GenericTypeDefs.h: 116: } bits;
-[; ;GenericTypeDefs.h: 117: } UINT8_VAL, UINT8_BITS;
-[; ;GenericTypeDefs.h: 119: typedef union
-[; ;GenericTypeDefs.h: 120: {
-[; ;GenericTypeDefs.h: 121: UINT16 Val;
-[; ;GenericTypeDefs.h: 122: UINT8 v[2] ;
-[; ;GenericTypeDefs.h: 123: struct 
-[; ;GenericTypeDefs.h: 124: {
-[; ;GenericTypeDefs.h: 125: UINT8 LB;
-[; ;GenericTypeDefs.h: 126: UINT8 HB;
-[; ;GenericTypeDefs.h: 127: } byte;
-[; ;GenericTypeDefs.h: 128: struct 
-[; ;GenericTypeDefs.h: 129: {
-[; ;GenericTypeDefs.h: 130: UINT8 b0:1;
-[; ;GenericTypeDefs.h: 131: UINT8 b1:1;
-[; ;GenericTypeDefs.h: 132: UINT8 b2:1;
-[; ;GenericTypeDefs.h: 133: UINT8 b3:1;
-[; ;GenericTypeDefs.h: 134: UINT8 b4:1;
-[; ;GenericTypeDefs.h: 135: UINT8 b5:1;
-[; ;GenericTypeDefs.h: 136: UINT8 b6:1;
-[; ;GenericTypeDefs.h: 137: UINT8 b7:1;
-[; ;GenericTypeDefs.h: 138: UINT8 b8:1;
-[; ;GenericTypeDefs.h: 139: UINT8 b9:1;
-[; ;GenericTypeDefs.h: 140: UINT8 b10:1;
-[; ;GenericTypeDefs.h: 141: UINT8 b11:1;
-[; ;GenericTypeDefs.h: 142: UINT8 b12:1;
-[; ;GenericTypeDefs.h: 143: UINT8 b13:1;
-[; ;GenericTypeDefs.h: 144: UINT8 b14:1;
-[; ;GenericTypeDefs.h: 145: UINT8 b15:1;
-[; ;GenericTypeDefs.h: 146: } bits;
-[; ;GenericTypeDefs.h: 147: } UINT16_VAL, UINT16_BITS;
-[; ;GenericTypeDefs.h: 151: typedef union
-[; ;GenericTypeDefs.h: 152: {
-[; ;GenericTypeDefs.h: 153: UINT24 Val;
-[; ;GenericTypeDefs.h: 154: UINT8 v[3] ;
-[; ;GenericTypeDefs.h: 155: struct 
-[; ;GenericTypeDefs.h: 156: {
-[; ;GenericTypeDefs.h: 157: UINT8 LB;
-[; ;GenericTypeDefs.h: 158: UINT8 HB;
-[; ;GenericTypeDefs.h: 159: UINT8 UB;
-[; ;GenericTypeDefs.h: 160: } byte;
-[; ;GenericTypeDefs.h: 161: struct 
-[; ;GenericTypeDefs.h: 162: {
-[; ;GenericTypeDefs.h: 163: UINT8 b0:1;
-[; ;GenericTypeDefs.h: 164: UINT8 b1:1;
-[; ;GenericTypeDefs.h: 165: UINT8 b2:1;
-[; ;GenericTypeDefs.h: 166: UINT8 b3:1;
-[; ;GenericTypeDefs.h: 167: UINT8 b4:1;
-[; ;GenericTypeDefs.h: 168: UINT8 b5:1;
-[; ;GenericTypeDefs.h: 169: UINT8 b6:1;
-[; ;GenericTypeDefs.h: 170: UINT8 b7:1;
-[; ;GenericTypeDefs.h: 171: UINT8 b8:1;
-[; ;GenericTypeDefs.h: 172: UINT8 b9:1;
-[; ;GenericTypeDefs.h: 173: UINT8 b10:1;
-[; ;GenericTypeDefs.h: 174: UINT8 b11:1;
-[; ;GenericTypeDefs.h: 175: UINT8 b12:1;
-[; ;GenericTypeDefs.h: 176: UINT8 b13:1;
-[; ;GenericTypeDefs.h: 177: UINT8 b14:1;
-[; ;GenericTypeDefs.h: 178: UINT8 b15:1;
-[; ;GenericTypeDefs.h: 179: UINT8 b16:1;
-[; ;GenericTypeDefs.h: 180: UINT8 b17:1;
-[; ;GenericTypeDefs.h: 181: UINT8 b18:1;
-[; ;GenericTypeDefs.h: 182: UINT8 b19:1;
-[; ;GenericTypeDefs.h: 183: UINT8 b20:1;
-[; ;GenericTypeDefs.h: 184: UINT8 b21:1;
-[; ;GenericTypeDefs.h: 185: UINT8 b22:1;
-[; ;GenericTypeDefs.h: 186: UINT8 b23:1;
-[; ;GenericTypeDefs.h: 187: } bits;
-[; ;GenericTypeDefs.h: 188: } UINT24_VAL, UINT24_BITS;
-[; ;GenericTypeDefs.h: 191: typedef union
-[; ;GenericTypeDefs.h: 192: {
-[; ;GenericTypeDefs.h: 193: UINT32 Val;
-[; ;GenericTypeDefs.h: 194: UINT16 w[2] ;
-[; ;GenericTypeDefs.h: 195: UINT8 v[4] ;
-[; ;GenericTypeDefs.h: 196: struct 
-[; ;GenericTypeDefs.h: 197: {
-[; ;GenericTypeDefs.h: 198: UINT16 LW;
-[; ;GenericTypeDefs.h: 199: UINT16 HW;
-[; ;GenericTypeDefs.h: 200: } word;
-[; ;GenericTypeDefs.h: 201: struct 
-[; ;GenericTypeDefs.h: 202: {
-[; ;GenericTypeDefs.h: 203: UINT8 LB;
-[; ;GenericTypeDefs.h: 204: UINT8 HB;
-[; ;GenericTypeDefs.h: 205: UINT8 UB;
-[; ;GenericTypeDefs.h: 206: UINT8 MB;
-[; ;GenericTypeDefs.h: 207: } byte;
-[; ;GenericTypeDefs.h: 208: struct 
-[; ;GenericTypeDefs.h: 209: {
-[; ;GenericTypeDefs.h: 210: UINT16_VAL low;
-[; ;GenericTypeDefs.h: 211: UINT16_VAL high;
-[; ;GenericTypeDefs.h: 212: }wordUnion;
-[; ;GenericTypeDefs.h: 213: struct 
-[; ;GenericTypeDefs.h: 214: {
-[; ;GenericTypeDefs.h: 215: UINT8 b0:1;
-[; ;GenericTypeDefs.h: 216: UINT8 b1:1;
-[; ;GenericTypeDefs.h: 217: UINT8 b2:1;
-[; ;GenericTypeDefs.h: 218: UINT8 b3:1;
-[; ;GenericTypeDefs.h: 219: UINT8 b4:1;
-[; ;GenericTypeDefs.h: 220: UINT8 b5:1;
-[; ;GenericTypeDefs.h: 221: UINT8 b6:1;
-[; ;GenericTypeDefs.h: 222: UINT8 b7:1;
-[; ;GenericTypeDefs.h: 223: UINT8 b8:1;
-[; ;GenericTypeDefs.h: 224: UINT8 b9:1;
-[; ;GenericTypeDefs.h: 225: UINT8 b10:1;
-[; ;GenericTypeDefs.h: 226: UINT8 b11:1;
-[; ;GenericTypeDefs.h: 227: UINT8 b12:1;
-[; ;GenericTypeDefs.h: 228: UINT8 b13:1;
-[; ;GenericTypeDefs.h: 229: UINT8 b14:1;
-[; ;GenericTypeDefs.h: 230: UINT8 b15:1;
-[; ;GenericTypeDefs.h: 231: UINT8 b16:1;
-[; ;GenericTypeDefs.h: 232: UINT8 b17:1;
-[; ;GenericTypeDefs.h: 233: UINT8 b18:1;
-[; ;GenericTypeDefs.h: 234: UINT8 b19:1;
-[; ;GenericTypeDefs.h: 235: UINT8 b20:1;
-[; ;GenericTypeDefs.h: 236: UINT8 b21:1;
-[; ;GenericTypeDefs.h: 237: UINT8 b22:1;
-[; ;GenericTypeDefs.h: 238: UINT8 b23:1;
-[; ;GenericTypeDefs.h: 239: UINT8 b24:1;
-[; ;GenericTypeDefs.h: 240: UINT8 b25:1;
-[; ;GenericTypeDefs.h: 241: UINT8 b26:1;
-[; ;GenericTypeDefs.h: 242: UINT8 b27:1;
-[; ;GenericTypeDefs.h: 243: UINT8 b28:1;
-[; ;GenericTypeDefs.h: 244: UINT8 b29:1;
-[; ;GenericTypeDefs.h: 245: UINT8 b30:1;
-[; ;GenericTypeDefs.h: 246: UINT8 b31:1;
-[; ;GenericTypeDefs.h: 247: } bits;
-[; ;GenericTypeDefs.h: 248: } UINT32_VAL;
-[; ;GenericTypeDefs.h: 343: typedef void VOID;
-[; ;GenericTypeDefs.h: 345: typedef char CHAR8;
-[; ;GenericTypeDefs.h: 346: typedef unsigned char UCHAR8;
-[; ;GenericTypeDefs.h: 348: typedef unsigned char BYTE;
-[; ;GenericTypeDefs.h: 349: typedef unsigned short int WORD;
-[; ;GenericTypeDefs.h: 350: typedef unsigned long DWORD;
-[; ;GenericTypeDefs.h: 353: typedef unsigned long long QWORD;
-[; ;GenericTypeDefs.h: 354: typedef signed char CHAR;
-[; ;GenericTypeDefs.h: 355: typedef signed short int SHORT;
-[; ;GenericTypeDefs.h: 356: typedef signed long LONG;
-[; ;GenericTypeDefs.h: 359: typedef signed long long LONGLONG;
-[; ;GenericTypeDefs.h: 360: typedef union
-[; ;GenericTypeDefs.h: 361: {
-[; ;GenericTypeDefs.h: 362: BYTE Val;
-[; ;GenericTypeDefs.h: 363: struct 
-[; ;GenericTypeDefs.h: 364: {
-[; ;GenericTypeDefs.h: 365: BYTE b0:1;
-[; ;GenericTypeDefs.h: 366: BYTE b1:1;
-[; ;GenericTypeDefs.h: 367: BYTE b2:1;
-[; ;GenericTypeDefs.h: 368: BYTE b3:1;
-[; ;GenericTypeDefs.h: 369: BYTE b4:1;
-[; ;GenericTypeDefs.h: 370: BYTE b5:1;
-[; ;GenericTypeDefs.h: 371: BYTE b6:1;
-[; ;GenericTypeDefs.h: 372: BYTE b7:1;
-[; ;GenericTypeDefs.h: 373: } bits;
-[; ;GenericTypeDefs.h: 374: } BYTE_VAL, BYTE_BITS;
-[; ;GenericTypeDefs.h: 376: typedef union
-[; ;GenericTypeDefs.h: 377: {
-[; ;GenericTypeDefs.h: 378: WORD Val;
-[; ;GenericTypeDefs.h: 379: BYTE v[2] ;
-[; ;GenericTypeDefs.h: 380: struct 
-[; ;GenericTypeDefs.h: 381: {
-[; ;GenericTypeDefs.h: 382: BYTE LB;
-[; ;GenericTypeDefs.h: 383: BYTE HB;
-[; ;GenericTypeDefs.h: 384: } byte;
-[; ;GenericTypeDefs.h: 385: struct 
-[; ;GenericTypeDefs.h: 386: {
-[; ;GenericTypeDefs.h: 387: BYTE b0:1;
-[; ;GenericTypeDefs.h: 388: BYTE b1:1;
-[; ;GenericTypeDefs.h: 389: BYTE b2:1;
-[; ;GenericTypeDefs.h: 390: BYTE b3:1;
-[; ;GenericTypeDefs.h: 391: BYTE b4:1;
-[; ;GenericTypeDefs.h: 392: BYTE b5:1;
-[; ;GenericTypeDefs.h: 393: BYTE b6:1;
-[; ;GenericTypeDefs.h: 394: BYTE b7:1;
-[; ;GenericTypeDefs.h: 395: BYTE b8:1;
-[; ;GenericTypeDefs.h: 396: BYTE b9:1;
-[; ;GenericTypeDefs.h: 397: BYTE b10:1;
-[; ;GenericTypeDefs.h: 398: BYTE b11:1;
-[; ;GenericTypeDefs.h: 399: BYTE b12:1;
-[; ;GenericTypeDefs.h: 400: BYTE b13:1;
-[; ;GenericTypeDefs.h: 401: BYTE b14:1;
-[; ;GenericTypeDefs.h: 402: BYTE b15:1;
-[; ;GenericTypeDefs.h: 403: } bits;
-[; ;GenericTypeDefs.h: 404: } WORD_VAL, WORD_BITS;
-[; ;GenericTypeDefs.h: 406: typedef union
-[; ;GenericTypeDefs.h: 407: {
-[; ;GenericTypeDefs.h: 408: DWORD Val;
-[; ;GenericTypeDefs.h: 409: WORD w[2] ;
-[; ;GenericTypeDefs.h: 410: BYTE v[4] ;
-[; ;GenericTypeDefs.h: 411: struct 
-[; ;GenericTypeDefs.h: 412: {
-[; ;GenericTypeDefs.h: 413: WORD LW;
-[; ;GenericTypeDefs.h: 414: WORD HW;
-[; ;GenericTypeDefs.h: 415: } word;
-[; ;GenericTypeDefs.h: 416: struct 
-[; ;GenericTypeDefs.h: 417: {
-[; ;GenericTypeDefs.h: 418: BYTE LB;
-[; ;GenericTypeDefs.h: 419: BYTE HB;
-[; ;GenericTypeDefs.h: 420: BYTE UB;
-[; ;GenericTypeDefs.h: 421: BYTE MB;
-[; ;GenericTypeDefs.h: 422: } byte;
-[; ;GenericTypeDefs.h: 423: struct 
-[; ;GenericTypeDefs.h: 424: {
-[; ;GenericTypeDefs.h: 425: WORD_VAL low;
-[; ;GenericTypeDefs.h: 426: WORD_VAL high;
-[; ;GenericTypeDefs.h: 427: }wordUnion;
-[; ;GenericTypeDefs.h: 428: struct 
-[; ;GenericTypeDefs.h: 429: {
-[; ;GenericTypeDefs.h: 430: BYTE b0:1;
-[; ;GenericTypeDefs.h: 431: BYTE b1:1;
-[; ;GenericTypeDefs.h: 432: BYTE b2:1;
-[; ;GenericTypeDefs.h: 433: BYTE b3:1;
-[; ;GenericTypeDefs.h: 434: BYTE b4:1;
-[; ;GenericTypeDefs.h: 435: BYTE b5:1;
-[; ;GenericTypeDefs.h: 436: BYTE b6:1;
-[; ;GenericTypeDefs.h: 437: BYTE b7:1;
-[; ;GenericTypeDefs.h: 438: BYTE b8:1;
-[; ;GenericTypeDefs.h: 439: BYTE b9:1;
-[; ;GenericTypeDefs.h: 440: BYTE b10:1;
-[; ;GenericTypeDefs.h: 441: BYTE b11:1;
-[; ;GenericTypeDefs.h: 442: BYTE b12:1;
-[; ;GenericTypeDefs.h: 443: BYTE b13:1;
-[; ;GenericTypeDefs.h: 444: BYTE b14:1;
-[; ;GenericTypeDefs.h: 445: BYTE b15:1;
-[; ;GenericTypeDefs.h: 446: BYTE b16:1;
-[; ;GenericTypeDefs.h: 447: BYTE b17:1;
-[; ;GenericTypeDefs.h: 448: BYTE b18:1;
-[; ;GenericTypeDefs.h: 449: BYTE b19:1;
-[; ;GenericTypeDefs.h: 450: BYTE b20:1;
-[; ;GenericTypeDefs.h: 451: BYTE b21:1;
-[; ;GenericTypeDefs.h: 452: BYTE b22:1;
-[; ;GenericTypeDefs.h: 453: BYTE b23:1;
-[; ;GenericTypeDefs.h: 454: BYTE b24:1;
-[; ;GenericTypeDefs.h: 455: BYTE b25:1;
-[; ;GenericTypeDefs.h: 456: BYTE b26:1;
-[; ;GenericTypeDefs.h: 457: BYTE b27:1;
-[; ;GenericTypeDefs.h: 458: BYTE b28:1;
-[; ;GenericTypeDefs.h: 459: BYTE b29:1;
-[; ;GenericTypeDefs.h: 460: BYTE b30:1;
-[; ;GenericTypeDefs.h: 461: BYTE b31:1;
-[; ;GenericTypeDefs.h: 462: } bits;
-[; ;GenericTypeDefs.h: 463: } DWORD_VAL;
-[; ;GenericTypeDefs.h: 466: typedef union
-[; ;GenericTypeDefs.h: 467: {
-[; ;GenericTypeDefs.h: 468: QWORD Val;
-[; ;GenericTypeDefs.h: 469: DWORD d[2] ;
-[; ;GenericTypeDefs.h: 470: WORD w[4] ;
-[; ;GenericTypeDefs.h: 471: BYTE v[8] ;
-[; ;GenericTypeDefs.h: 472: struct 
-[; ;GenericTypeDefs.h: 473: {
-[; ;GenericTypeDefs.h: 474: DWORD LD;
-[; ;GenericTypeDefs.h: 475: DWORD HD;
-[; ;GenericTypeDefs.h: 476: } dword;
-[; ;GenericTypeDefs.h: 477: struct 
-[; ;GenericTypeDefs.h: 478: {
-[; ;GenericTypeDefs.h: 479: WORD LW;
-[; ;GenericTypeDefs.h: 480: WORD HW;
-[; ;GenericTypeDefs.h: 481: WORD UW;
-[; ;GenericTypeDefs.h: 482: WORD MW;
-[; ;GenericTypeDefs.h: 483: } word;
-[; ;GenericTypeDefs.h: 484: struct 
-[; ;GenericTypeDefs.h: 485: {
-[; ;GenericTypeDefs.h: 486: BYTE b0:1;
-[; ;GenericTypeDefs.h: 487: BYTE b1:1;
-[; ;GenericTypeDefs.h: 488: BYTE b2:1;
-[; ;GenericTypeDefs.h: 489: BYTE b3:1;
-[; ;GenericTypeDefs.h: 490: BYTE b4:1;
-[; ;GenericTypeDefs.h: 491: BYTE b5:1;
-[; ;GenericTypeDefs.h: 492: BYTE b6:1;
-[; ;GenericTypeDefs.h: 493: BYTE b7:1;
-[; ;GenericTypeDefs.h: 494: BYTE b8:1;
-[; ;GenericTypeDefs.h: 495: BYTE b9:1;
-[; ;GenericTypeDefs.h: 496: BYTE b10:1;
-[; ;GenericTypeDefs.h: 497: BYTE b11:1;
-[; ;GenericTypeDefs.h: 498: BYTE b12:1;
-[; ;GenericTypeDefs.h: 499: BYTE b13:1;
-[; ;GenericTypeDefs.h: 500: BYTE b14:1;
-[; ;GenericTypeDefs.h: 501: BYTE b15:1;
-[; ;GenericTypeDefs.h: 502: BYTE b16:1;
-[; ;GenericTypeDefs.h: 503: BYTE b17:1;
-[; ;GenericTypeDefs.h: 504: BYTE b18:1;
-[; ;GenericTypeDefs.h: 505: BYTE b19:1;
-[; ;GenericTypeDefs.h: 506: BYTE b20:1;
-[; ;GenericTypeDefs.h: 507: BYTE b21:1;
-[; ;GenericTypeDefs.h: 508: BYTE b22:1;
-[; ;GenericTypeDefs.h: 509: BYTE b23:1;
-[; ;GenericTypeDefs.h: 510: BYTE b24:1;
-[; ;GenericTypeDefs.h: 511: BYTE b25:1;
-[; ;GenericTypeDefs.h: 512: BYTE b26:1;
-[; ;GenericTypeDefs.h: 513: BYTE b27:1;
-[; ;GenericTypeDefs.h: 514: BYTE b28:1;
-[; ;GenericTypeDefs.h: 515: BYTE b29:1;
-[; ;GenericTypeDefs.h: 516: BYTE b30:1;
-[; ;GenericTypeDefs.h: 517: BYTE b31:1;
-[; ;GenericTypeDefs.h: 518: BYTE b32:1;
-[; ;GenericTypeDefs.h: 519: BYTE b33:1;
-[; ;GenericTypeDefs.h: 520: BYTE b34:1;
-[; ;GenericTypeDefs.h: 521: BYTE b35:1;
-[; ;GenericTypeDefs.h: 522: BYTE b36:1;
-[; ;GenericTypeDefs.h: 523: BYTE b37:1;
-[; ;GenericTypeDefs.h: 524: BYTE b38:1;
-[; ;GenericTypeDefs.h: 525: BYTE b39:1;
-[; ;GenericTypeDefs.h: 526: BYTE b40:1;
-[; ;GenericTypeDefs.h: 527: BYTE b41:1;
-[; ;GenericTypeDefs.h: 528: BYTE b42:1;
-[; ;GenericTypeDefs.h: 529: BYTE b43:1;
-[; ;GenericTypeDefs.h: 530: BYTE b44:1;
-[; ;GenericTypeDefs.h: 531: BYTE b45:1;
-[; ;GenericTypeDefs.h: 532: BYTE b46:1;
-[; ;GenericTypeDefs.h: 533: BYTE b47:1;
-[; ;GenericTypeDefs.h: 534: BYTE b48:1;
-[; ;GenericTypeDefs.h: 535: BYTE b49:1;
-[; ;GenericTypeDefs.h: 536: BYTE b50:1;
-[; ;GenericTypeDefs.h: 537: BYTE b51:1;
-[; ;GenericTypeDefs.h: 538: BYTE b52:1;
-[; ;GenericTypeDefs.h: 539: BYTE b53:1;
-[; ;GenericTypeDefs.h: 540: BYTE b54:1;
-[; ;GenericTypeDefs.h: 541: BYTE b55:1;
-[; ;GenericTypeDefs.h: 542: BYTE b56:1;
-[; ;GenericTypeDefs.h: 543: BYTE b57:1;
-[; ;GenericTypeDefs.h: 544: BYTE b58:1;
-[; ;GenericTypeDefs.h: 545: BYTE b59:1;
-[; ;GenericTypeDefs.h: 546: BYTE b60:1;
-[; ;GenericTypeDefs.h: 547: BYTE b61:1;
-[; ;GenericTypeDefs.h: 548: BYTE b62:1;
-[; ;GenericTypeDefs.h: 549: BYTE b63:1;
-[; ;GenericTypeDefs.h: 550: } bits;
-[; ;GenericTypeDefs.h: 551: } QWORD_VAL;
-[; ;flash.h: 113: extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;flash.h: 120: extern void EraseFlash(unsigned long startaddr, unsigned long endaddr);
-[; ;flash.h: 122: extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, unsigned char *flash_array);
-[; ;flash.h: 124: extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;i2c.h: 244: void OpenI2C1( unsigned char sync_mode, unsigned char slew );
-[; ;i2c.h: 264: unsigned char ReadI2C1( void );
-[; ;i2c.h: 279: signed char WriteI2C1( unsigned char data_out );
-[; ;i2c.h: 294: signed char getsI2C1( unsigned char *rdptr, unsigned char length );
-[; ;i2c.h: 297: signed char putsI2C1( unsigned char *wrptr );
-[; ;i2c.h: 305: signed char EEAckPolling1( unsigned char control );
-[; ;i2c.h: 308: signed char EEByteWrite1( unsigned char control,
-[; ;i2c.h: 309: unsigned char address,
-[; ;i2c.h: 310: unsigned char data );
-[; ;i2c.h: 313: signed int EECurrentAddRead1( unsigned char control );
-[; ;i2c.h: 316: signed char EEPageWrite1( unsigned char control,
-[; ;i2c.h: 317: unsigned char address,
-[; ;i2c.h: 318: unsigned char *wrptr );
-[; ;i2c.h: 321: signed int EERandomRead1( unsigned char control, unsigned char address );
-[; ;i2c.h: 324: signed char EESequentialRead1( unsigned char control,
-[; ;i2c.h: 325: unsigned char address,
-[; ;i2c.h: 326: unsigned char *rdptr,
-[; ;i2c.h: 327: unsigned char length );
-[; ;i2c.h: 600: void OpenI2C2( unsigned char sync_mode, unsigned char slew );
-[; ;i2c.h: 617: unsigned char ReadI2C2( void );
-[; ;i2c.h: 630: signed char WriteI2C2( unsigned char data_out );
-[; ;i2c.h: 643: signed char getsI2C2( unsigned char *rdptr, unsigned char length );
-[; ;i2c.h: 645: signed char putsI2C2( unsigned char *wrptr );
-[; ;i2c.h: 651: signed char EEAckPolling2( unsigned char control );
-[; ;i2c.h: 653: signed char EEByteWrite2( unsigned char control,
-[; ;i2c.h: 654: unsigned char address,
-[; ;i2c.h: 655: unsigned char data );
-[; ;i2c.h: 657: signed int EECurrentAddRead2( unsigned char control );
-[; ;i2c.h: 659: signed char EEPageWrite2( unsigned char control,
-[; ;i2c.h: 660: unsigned char address,
-[; ;i2c.h: 661: unsigned char *wrptr );
-[; ;i2c.h: 663: signed int EERandomRead2( unsigned char control, unsigned char address );
-[; ;i2c.h: 665: signed char EESequentialRead2( unsigned char control,
-[; ;i2c.h: 666: unsigned char address,
-[; ;i2c.h: 667: unsigned char *rdptr,
-[; ;i2c.h: 668: unsigned char length );
-[; ;mwire.h: 200: void OpenMwire1( unsigned char sync_mode );
-[; ;mwire.h: 203: unsigned char ReadMwire1( unsigned char high_byte,
-[; ;mwire.h: 204: unsigned char low_byte );
-[; ;mwire.h: 219: signed char WriteMwire1( unsigned char data_out );
-[; ;mwire.h: 234: void getsMwire1( unsigned char *rdptr, unsigned char length );
-[; ;portb.h: 126: void OpenPORTB( unsigned char config);
-[; ;portb.h: 176: void OpenRB0INT( unsigned char config);
-[; ;portb.h: 194: void OpenRB1INT( unsigned char config);
-[; ;portb.h: 211: void OpenRB2INT( unsigned char config);
-[; ;pwm.h: 85: union PWMDC
-[; ;pwm.h: 86: {
-[; ;pwm.h: 87: unsigned int lpwm;
-[; ;pwm.h: 88: char bpwm[2];
-[; ;pwm.h: 89: };
-[; ;pwm.h: 467: void OpenPWM1 ( char period);
-[; ;pwm.h: 468: void SetDCPWM1 ( unsigned int duty_cycle);
-[; ;pwm.h: 477: void ClosePWM1 (void);
-[; ;pwm.h: 538: void OpenPWM4 ( unsigned char period, unsigned char timer_source );
-[; ;pwm.h: 539: void SetDCPWM4 ( unsigned int duty_cycle);
-[; ;pwm.h: 540: void ClosePWM4 (void);
-[; ;pwm.h: 542: void OpenPWM5 ( unsigned char period, unsigned char timer_source );
-[; ;pwm.h: 543: void SetDCPWM5 ( unsigned int duty_cycle);
-[; ;pwm.h: 544: void ClosePWM5 (void);
-[; ;pwm.h: 586: void OpenEPWM1( unsigned char period, unsigned char timer_source );
-[; ;pwm.h: 587: void SetDCEPWM1 ( unsigned int duty_cycle);
-[; ;pwm.h: 588: void SetOutputEPWM1 ( unsigned char output_config,
-[; ;pwm.h: 589: unsigned char pwm_mode);
-[; ;pwm.h: 590: void CloseEPWM1 (void);
-[; ;pwm.h: 594: void OpenEPWM2( unsigned char period, unsigned char timer_source );
-[; ;pwm.h: 595: void SetDCEPWM2 ( unsigned int duty_cycle);
-[; ;pwm.h: 596: void SetOutputEPWM2 ( unsigned char output_config,
-[; ;pwm.h: 597: unsigned char pwm_mode);
-[; ;pwm.h: 598: void CloseEPWM2 (void);
-[; ;pwm.h: 601: void OpenEPWM3( unsigned char period, unsigned char timer_source );
-[; ;pwm.h: 602: void SetDCEPWM3 ( unsigned int duty_cycle);
-[; ;pwm.h: 603: void SetOutputEPWM3 ( unsigned char output_config,
-[; ;pwm.h: 604: unsigned char pwm_mode);
-[; ;pwm.h: 605: void CloseEPWM3 (void);
-[; ;reset.h: 16: char isMCLR(void);
-[; ;reset.h: 17: void StatusReset(void);
-[; ;reset.h: 18: char isPOR(void);
-[; ;reset.h: 19: char isWU(void);
-[; ;reset.h: 22: char isBOR(void);
-[; ;reset.h: 26: char isWDTTO(void);
-[; ;reset.h: 27: char isWDTWU(void);
-[; ;reset.h: 31: char isLVD(void);
-[; ;rtcc.h: 687: void Open_RTCC(void);
-[; ;rtcc.h: 688: void Close_RTCC(void);
-[; ;rtcc.h: 689: unsigned char update_RTCC(void);
-[; ;sw_i2c.h: 97: void SWStopI2C ( void );
-[; ;sw_i2c.h: 98: void SWStartI2C ( void );
-[; ;sw_i2c.h: 99: void SWRestartI2C ( void );
-[; ;sw_i2c.h: 100: void SWStopI2C ( void );
-[; ;sw_i2c.h: 102: signed char SWAckI2C( void );
-[; ;sw_i2c.h: 103: signed char Clock_test( void );
-[; ;sw_i2c.h: 104: signed int SWReadI2C( void );
-[; ;sw_i2c.h: 105: signed char SWWriteI2C(  unsigned char data_out );
-[; ;sw_i2c.h: 106: signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
-[; ;sw_i2c.h: 107: signed char SWPutsI2C(  unsigned char *wrptr );
-[; ;sw_spi.h: 84: void OpenSWSPI(void);
-[; ;sw_spi.h: 87: char WriteSWSPI( char output);
-[; ;sw_spi.h: 90: void SetCSSWSPI(void);
-[; ;sw_spi.h: 93: void ClearCSSWSPI(void);
-[; ;sw_uart.h: 47: void OpenUART(void);
-[; ;sw_uart.h: 49: unsigned char ReadUART(void);
-[; ;sw_uart.h: 51: void WriteUART( unsigned char);
-[; ;sw_uart.h: 53: void getsUART( char *, unsigned char);
-[; ;sw_uart.h: 55: void putsUART( char *);
-[; ;sw_uart.h: 79: extern void DelayRXBitUART (void);
-[; ;sw_uart.h: 80: extern void DelayRXHalfBitUART(void);
-[; ;sw_uart.h: 81: extern void DelayTXBitUART (void);
-[; ;timers.h: 36: union Timers
-[; ;timers.h: 37: {
-[; ;timers.h: 38: unsigned int lt;
-[; ;timers.h: 39: char bt[2];
-[; ;timers.h: 40: };
-[; ;timers.h: 118: void OpenTimer0 ( unsigned char config);
-[; ;timers.h: 119: void CloseTimer0 (void);
-[; ;timers.h: 120: unsigned int ReadTimer0 (void);
-[; ;timers.h: 121: void WriteTimer0 ( unsigned int timer0);
-[; ;timers.h: 185: void OpenTimer1 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 186: void CloseTimer1 (void);
-[; ;timers.h: 187: unsigned int ReadTimer1 (void);
-[; ;timers.h: 188: void WriteTimer1 ( unsigned int timer1);
-[; ;timers.h: 325: void OpenTimer2 ( unsigned char config);
-[; ;timers.h: 326: void CloseTimer2 (void);
-[; ;timers.h: 452: void OpenTimer3 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 453: void CloseTimer3 (void);
-[; ;timers.h: 454: unsigned int ReadTimer3 (void);
-[; ;timers.h: 455: void WriteTimer3 ( unsigned int timer3);
-[; ;timers.h: 541: void OpenTimer4 ( unsigned char config);
-[; ;timers.h: 542: void CloseTimer4 (void);
-[; ;timers.h: 657: void OpenTimer5 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 658: void CloseTimer5 (void);
-[; ;timers.h: 659: unsigned int ReadTimer5 (void);
-[; ;timers.h: 660: void WriteTimer5 ( unsigned int Timer5);
-[; ;timers.h: 746: void OpenTimer6 ( unsigned char config);
-[; ;timers.h: 747: void CloseTimer6 (void);
+[; ;pic18.h: 18: __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
+[; ;pic18.h: 19: __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
+[; ;pic18.h: 43: extern void __nop(void);
+[; ;pic18.h: 121: __attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
+[; ;pic18.h: 122: __attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
+[; ;pic18.h: 123: __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
+[; ;pic18.h: 152: extern __nonreentrant void _delay(unsigned long);
+[; ;pic18.h: 154: extern __nonreentrant void _delaywdt(unsigned long);
+[; ;pic18.h: 156: extern __nonreentrant void _delay3(unsigned char);
 [; ;usart.h: 200: union USART1
 [; ;usart.h: 201: {
 [; ;usart.h: 202: unsigned char val;
@@ -7957,335 +7282,128 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;usart.h: 337: void putrs2USART ( const  char *data);
 [; ;usart.h: 660: void baud1USART ( unsigned char baudconfig);
 [; ;usart.h: 665: void baud2USART ( unsigned char baudconfig);
-[; ;xlcd.h: 87: void OpenXLCD( unsigned char);
-[; ;xlcd.h: 92: void SetCGRamAddr( unsigned char);
-[; ;xlcd.h: 97: void SetDDRamAddr( unsigned char);
-[; ;xlcd.h: 102: unsigned char BusyXLCD(void);
-[; ;xlcd.h: 107: unsigned char ReadAddrXLCD(void);
-[; ;xlcd.h: 112: char ReadDataXLCD(void);
-[; ;xlcd.h: 117: void WriteCmdXLCD( unsigned char);
-[; ;xlcd.h: 122: void WriteDataXLCD( char);
-[; ;xlcd.h: 132: void putsXLCD( char *);
-[; ;xlcd.h: 137: void putrsXLCD(const char *);
-[; ;xlcd.h: 140: extern void DelayFor18TCY(void);
-[; ;xlcd.h: 141: extern void DelayPORXLCD(void);
-[; ;xlcd.h: 142: extern void DelayXLCD(void);
-[; ;delays.h: 13: void Delay1TCYx(unsigned char);
-[; ;delays.h: 19: void Delay10TCYx(unsigned char);
-[; ;delays.h: 25: void Delay100TCYx(unsigned char);
-[; ;delays.h: 31: void Delay1KTCYx(unsigned char);
-[; ;delays.h: 37: void Delay10KTCYx(unsigned char);
-[; ;pic18.h: 18: __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
-[; ;pic18.h: 19: __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
-[; ;pic18.h: 43: extern void __nop(void);
-[; ;pic18.h: 121: __attribute__((__unsupported__("The " "Read_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) unsigned char Read_b_eep(unsigned int badd);
-[; ;pic18.h: 122: __attribute__((__unsupported__("The " "Busy_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Busy_eep(void);
-[; ;pic18.h: 123: __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer supported. Please use the MPLAB X MCC."))) void Write_b_eep(unsigned int badd, unsigned char bdat);
-[; ;pic18.h: 152: extern __nonreentrant void _delay(unsigned long);
-[; ;pic18.h: 154: extern __nonreentrant void _delaywdt(unsigned long);
-[; ;pic18.h: 156: extern __nonreentrant void _delay3(unsigned char);
-"16 config.h
-[p x FOSC=HSMP ]
-"17
-[p x PLLCFG=ON ]
-"18
-[p x PRICLKEN=ON ]
-"19
-[p x FCMEN=OFF ]
-"20
-[p x IESO=OFF ]
-"23
-[p x PWRTEN=OFF ]
-"24
-[p x BOREN=SBORDIS ]
-"25
-[p x BORV=190 ]
-"28
-[p x WDTEN=OFF ]
-"29
-[p x WDTPS=32768 ]
-"32
-[p x CCP2MX=PORTC1 ]
-"33
-[p x PBADEN=ON ]
-"34
-[p x CCP3MX=PORTB5 ]
-"35
-[p x HFOFST=ON ]
-"36
-[p x T3CMX=PORTC0 ]
-"37
-[p x P2BMX=PORTB5 ]
-"38
-[p x MCLRE=EXTMCLR ]
-"41
-[p x STVREN=ON ]
-"42
-[p x LVP=ON ]
-"43
-[p x XINST=OFF ]
-"46
-[p x CP0=OFF ]
-"47
-[p x CP1=OFF ]
-"48
-[p x CP2=OFF ]
-"49
-[p x CP3=OFF ]
-"52
-[p x CPB=OFF ]
-"53
-[p x CPD=OFF ]
-"56
-[p x WRT0=OFF ]
-"57
-[p x WRT1=OFF ]
-"58
-[p x WRT2=OFF ]
-"59
-[p x WRT3=OFF ]
-"62
-[p x WRTC=OFF ]
-"63
-[p x WRTB=OFF ]
-"64
-[p x WRTD=OFF ]
-"67
-[p x EBTR0=OFF ]
-"68
-[p x EBTR1=OFF ]
-"69
-[p x EBTR2=OFF ]
-"70
-[p x EBTR3=OFF ]
-"73
-[p x EBTRB=OFF ]
-[; ;stdarg.h: 7: typedef void * va_list[1];
-[; ;stdarg.h: 10: extern void * __va_start(void);
-[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
-[; ;stdio.h: 43: struct __prbuf
-[; ;stdio.h: 44: {
-[; ;stdio.h: 45: char * ptr;
-[; ;stdio.h: 46: void (* func)(char);
-[; ;stdio.h: 47: };
-[; ;errno.h: 25: extern int errno;
-[; ;conio.h: 12: extern void init_uart(void);
-[; ;conio.h: 14: extern char getch(void);
-[; ;conio.h: 15: extern char getche(void);
-[; ;conio.h: 16: extern void putch(char);
-[; ;conio.h: 17: extern void ungetch(char);
-[; ;conio.h: 19: extern __bit kbhit(void);
-[; ;conio.h: 23: extern char * cgets(char *);
-[; ;conio.h: 24: extern void cputs(const char *);
-[; ;stdio.h: 88: extern int cprintf(char *, ...);
-[; ;stdio.h: 93: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-[; ;stdio.h: 183: extern char * gets(char *);
-[; ;stdio.h: 184: extern int puts(const char *);
-[; ;stdio.h: 185: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-[; ;stdio.h: 186: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-[; ;stdio.h: 187: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-[; ;stdio.h: 188: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-[; ;stdio.h: 189: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-[; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-[; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
-[; ;stdio.h: 195: extern int printf(const char *, ...);
-[; ;PhyLayer.h: 3: extern unsigned char FlagPaqRx2;
-[; ;PhyLayer.h: 4: extern unsigned char BufferRxUART[80];
-[; ;PhyLayer.h: 6: extern unsigned char iRx2XBAPI;
-[; ;PhyLayer.h: 7: extern unsigned char PaqXBAPILen;
-[; ;PhyLayer.h: 8: extern unsigned int NoPaqXBAPI;
-[; ;PhyLayer.h: 10: void Setup_USART2();
-[; ;PhyLayer.h: 11: void uart2Isr(void);
-[; ;Interrupt_manager.h: 110: void INTERRUPT_Initialize (void);
-[; ;Interrupt_manager.h: 122: void interrupt INTERRUPT_InterruptManager (void);
-[; ;main.c: 23: void SetupInit(void);
-[; ;main.c: 24: void SetupClock(void);
-[; ;main.c: 26: void putch(char data);
-[; ;main.c: 27: void SetupPorts();
-"30 main.c
-[v _main `(i ~T0 @X0 1 ef ]
+"4 PhyLayer.c
+[v _BufferRxUART `uc ~T0 @X0 -> 80 `i e ]
+[; ;PhyLayer.c: 4: unsigned char BufferRxUART[80];
+"5
+[v _FlagPaqRx2 `uc ~T0 @X0 1 e ]
+[i _FlagPaqRx2
+-> -> 0 `i `uc
+]
+[; ;PhyLayer.c: 5: unsigned char FlagPaqRx2=0;
+"6
+[v _iRx2XBAPI `uc ~T0 @X0 1 e ]
+[i _iRx2XBAPI
+-> -> 0 `i `uc
+]
+[; ;PhyLayer.c: 6: unsigned char iRx2XBAPI=0;
+"7
+[v _PaqXBAPILen `uc ~T0 @X0 1 e ]
+[i _PaqXBAPILen
+-> -> 0 `i `uc
+]
+[; ;PhyLayer.c: 7: unsigned char PaqXBAPILen=0;
+"8
+[v _NoPaqXBAPI `ui ~T0 @X0 1 e ]
+[i _NoPaqXBAPI
+-> -> 0 `i `ui
+]
+[; ;PhyLayer.c: 8: unsigned int NoPaqXBAPI=0;
+"10
+[v _Setup_USART2 `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 30: main(){
-[e :U _main ]
+[; ;PhyLayer.c: 10: void Setup_USART2(){
+[e :U _Setup_USART2 ]
 [f ]
-[; ;main.c: 32: SetupInit();
-"32
-[e ( _SetupInit ..  ]
-[; ;main.c: 34: while(1){
-"34
-[e :U 1148 ]
-{
-[; ;main.c: 35: for(unsigned char i=0;i<=50;i++){
-"35
-{
-[v _i `uc ~T0 @X0 1 a ]
-[e = _i -> -> 0 `i `uc ]
-[e $ <= -> _i `i -> 50 `i 1150  ]
-[e $U 1151  ]
-[e :U 1150 ]
-{
-[; ;main.c: 36: _delay((unsigned long)((10)*(32000000/4000.0)));
-"36
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"37
-}
-"35
-[e ++ _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 50 `i 1150  ]
-[e :U 1151 ]
-"37
-}
-[; ;main.c: 37: }
-[; ;main.c: 39: PORTBbits.RB3=!PORTBbits.RB3;
-"39
-[e = . . _PORTBbits 0 3 -> -> ! != -> . . _PORTBbits 0 3 `i -> -> -> 0 `i `Vuc `i `i `uc ]
-[; ;main.c: 41: while(!TXSTA2bits.TRMT);
-"41
-[e $U 1153  ]
-[e :U 1154 ]
-[e :U 1153 ]
-[e $ ! != -> . . _TXSTA2bits 0 1 `i -> -> -> 0 `i `Vuc `i 1154  ]
-[e :U 1155 ]
-[; ;main.c: 42: Write2USART(0x0A);
-"42
-[e ( _Write2USART (1 -> -> 10 `i `uc ]
-[; ;main.c: 44: if(FlagPaqRx2){
-"44
-[e $ ! != -> _FlagPaqRx2 `i -> -> -> 0 `i `uc `i 1156  ]
-{
-[; ;main.c: 45: while(!TXSTA2bits.TRMT);
-"45
-[e $U 1157  ]
-[e :U 1158 ]
-[e :U 1157 ]
-[e $ ! != -> . . _TXSTA2bits 0 1 `i -> -> -> 0 `i `Vuc `i 1158  ]
-[e :U 1159 ]
-[; ;main.c: 46: Write2USART(PaqXBAPILen);
-"46
-[e ( _Write2USART (1 _PaqXBAPILen ]
-"47
-}
-[e :U 1156 ]
-"50
-}
-[e :U 1147 ]
-"34
-[e $U 1148  ]
-[e :U 1149 ]
-[; ;main.c: 47: }
-[; ;main.c: 50: }
-[; ;main.c: 51: }
-"51
-[e :UE 1146 ]
-}
-"55
-[v _SetupInit `(v ~T0 @X0 1 ef ]
-"56
-{
-[; ;main.c: 55: void SetupInit()
-[; ;main.c: 56: {
-[e :U _SetupInit ]
-[f ]
-[; ;main.c: 57: SetupClock();
-"57
-[e ( _SetupClock ..  ]
-[; ;main.c: 58: SetupPorts();
-"58
-[e ( _SetupPorts ..  ]
-[; ;main.c: 59: Setup_USART2();
-"59
-[e ( _Setup_USART2 ..  ]
-[; ;main.c: 61: PEIE = 1;
-"61
-[e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 62: INTCONbits.GIE = 1;
-"62
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 63: }
-"63
-[e :UE 1160 ]
-}
-"65
-[v _SetupClock `(v ~T0 @X0 1 ef ]
-"66
-{
-[; ;main.c: 65: void SetupClock()
-[; ;main.c: 66: {
-[e :U _SetupClock ]
-[f ]
-[; ;main.c: 67: OSCCONbits.IRCF0 = 1;
-"67
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 68: OSCCONbits.IRCF1 = 1;
-"68
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;main.c: 69: OSCCONbits.IRCF2 = 1;
-"69
-[e = . . _OSCCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 70: }
-"70
-[e :UE 1161 ]
-}
-"73
-[v _SetupPorts `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 73: void SetupPorts() {
-[e :U _SetupPorts ]
-[f ]
-[; ;main.c: 74: ANSELA = 0;
-"74
-[e = _ANSELA -> -> 0 `i `uc ]
-[; ;main.c: 75: ANSELB = 0;
-"75
-[e = _ANSELB -> -> 0 `i `uc ]
-[; ;main.c: 76: ANSELC = 0;
-"76
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;main.c: 78: TRISBbits.RB7=1;
-"78
-[e = . . _TRISBbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 79: TRISBbits.RB6=0;
-"79
+"12
+[v _USART2Config `uc ~T0 @X0 1 a ]
+[; ;PhyLayer.c: 12: unsigned char USART2Config=0;
+[e = _USART2Config -> -> 0 `i `uc ]
+"13
+[v _BaudRate `ui ~T0 @X0 1 a ]
+[; ;PhyLayer.c: 13: unsigned int BaudRate=0;
+[e = _BaudRate -> -> 0 `i `ui ]
+[; ;PhyLayer.c: 15: TRISBbits.RB6=0;
+"15
 [e = . . _TRISBbits 1 6 -> -> 0 `i `uc ]
-[; ;main.c: 81: ANSELBbits.ANSB3=0;
-"81
-[e = . . _ANSELBbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 82: TRISBbits.RB3=0;
-"82
-[e = . . _TRISBbits 1 3 -> -> 0 `i `uc ]
-[; ;main.c: 83: PORTBbits.RB3=0;
-"83
-[e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 84: }
-"84
-[e :UE 1162 ]
+[; ;PhyLayer.c: 16: TRISBbits.RB7=1;
+"16
+[e = . . _TRISBbits 1 7 -> -> 1 `i `uc ]
+[; ;PhyLayer.c: 19: USART2Config=0b01111111
+[; ;PhyLayer.c: 20: &0b10111111
+[; ;PhyLayer.c: 21: &0b11111110
+[; ;PhyLayer.c: 22: &0b11111101
+[; ;PhyLayer.c: 23: &0b11111111
+[; ;PhyLayer.c: 24: &0b11111111
+[; ;PhyLayer.c: 25: &0b11011111;
+"25
+[e = _USART2Config -> & & & & & & -> 127 `i -> 191 `i -> 254 `i -> 253 `i -> 255 `i -> 255 `i -> 223 `i `uc ]
+[; ;PhyLayer.c: 26: BaudRate=51;
+"26
+[e = _BaudRate -> -> 51 `i `ui ]
+[; ;PhyLayer.c: 27: RCSTA2&=0b01001111,TXSTA2bits.TXEN=0,PIE3&=0b11001111;
+"27
+[e ; ; =& _RCSTA2 -> -> 79 `i `uc = . . _TXSTA2bits 0 5 -> -> 0 `i `uc =& _PIE3 -> -> 207 `i `uc ]
+[; ;PhyLayer.c: 28: Open2USART(USART2Config, BaudRate);
+"28
+[e ( _Open2USART (2 , _USART2Config _BaudRate ]
+[; ;PhyLayer.c: 29: IPR3bits.RC2IP=1;
+"29
+[e = . . _IPR3bits 0 5 -> -> 1 `i `uc ]
+[; ;PhyLayer.c: 30: PIE3bits.RC2IE=1;
+"30
+[e = . . _PIE3bits 0 5 -> -> 1 `i `uc ]
+[; ;PhyLayer.c: 31: PIR3bits.RC2IF=0;
+"31
+[e = . . _PIR3bits 0 5 -> -> 0 `i `uc ]
+[; ;PhyLayer.c: 32: }
+"32
+[e :UE 1112 ]
 }
-"86
-[v _putch `(v ~T0 @X0 1 ef1`uc ]
-"87
+"35
+[v _uart2Isr `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 86: void putch(char data)
-[; ;main.c: 87: {
-[e :U _putch ]
-"86
-[v _data `uc ~T0 @X0 1 r1 ]
-"87
+[; ;PhyLayer.c: 35: void uart2Isr(void){
+[e :U _uart2Isr ]
 [f ]
-[; ;main.c: 88: while(!TX2IF)
-"88
-[e $U 1164  ]
-[e :U 1165 ]
-[; ;main.c: 89: continue;
-"89
-[e $U 1164  ]
-[e :U 1164 ]
-"88
-[e $ ! _TX2IF 1165  ]
-[e :U 1166 ]
-[; ;main.c: 90: TXREG2 = data;
-"90
-[e = _TXREG2 _data ]
-[; ;main.c: 91: }
-"91
-[e :UE 1163 ]
+[; ;PhyLayer.c: 36: BufferRxUART[iRx2XBAPI] = Read2USART();
+"36
+[e = *U + &U _BufferRxUART * -> _iRx2XBAPI `ux -> -> # *U &U _BufferRxUART `ui `ux ( _Read2USART ..  ]
+[; ;PhyLayer.c: 38: if (iRx2XBAPI == 2){
+"38
+[e $ ! == -> _iRx2XBAPI `i -> 2 `i 1114  ]
+{
+[; ;PhyLayer.c: 40: PaqXBAPILen = BufferRxUART[2];
+"40
+[e = _PaqXBAPILen *U + &U _BufferRxUART * -> -> -> 2 `i `ui `ux -> -> # *U &U _BufferRxUART `ui `ux ]
+"41
+}
+[e :U 1114 ]
+[; ;PhyLayer.c: 41: }
+[; ;PhyLayer.c: 44: if (iRx2XBAPI >= PaqXBAPILen + 3){
+"44
+[e $ ! >= -> _iRx2XBAPI `i + -> _PaqXBAPILen `i -> 3 `i 1115  ]
+{
+[; ;PhyLayer.c: 45: iRx2XBAPI=0;
+"45
+[e = _iRx2XBAPI -> -> 0 `i `uc ]
+[; ;PhyLayer.c: 46: NoPaqXBAPI++;
+"46
+[e ++ _NoPaqXBAPI -> -> 1 `i `ui ]
+[; ;PhyLayer.c: 47: FlagPaqRx2=1;
+"47
+[e = _FlagPaqRx2 -> -> 1 `i `uc ]
+[; ;PhyLayer.c: 48: return ;
+"48
+[e $UE 1113  ]
+"49
+}
+[e :U 1115 ]
+[; ;PhyLayer.c: 49: }
+[; ;PhyLayer.c: 50: iRx2XBAPI++;
+"50
+[e ++ _iRx2XBAPI -> -> 1 `i `uc ]
+[; ;PhyLayer.c: 51: }
+"51
+[e :UE 1113 ]
 }

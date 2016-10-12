@@ -97,7 +97,10 @@ __ramtop:
 	psect	reset_vec
 reset_vec:
 	; No powerup routine
-	; No interrupt routine
+	global start
+
+; jump to start
+	goto start
 	GLOBAL __accesstop
 __accesstop EQU 96
 
@@ -107,7 +110,7 @@ start:
 
 ;Initialize the stack pointer (FSR1)
 	global stacklo, stackhi
-	stacklo	equ	060h
+	stacklo	equ	0B0h
 	stackhi	equ	0F37h
 
 
